@@ -8,8 +8,9 @@ Meteor.methods({
         let customisedPartUrl="search?";
         let part="id,snippet";
         let key='AIzaSyAzKwsrjBPMLhX-ufV4pOO1MMNjNUEdIa0';
+        let type="video";
         let maxResults=50;
-        let apiUrl=`${baseUrl}${customisedPartUrl}part=${part}&q=${searchQuery}&key=${key}&maxResults=${maxResults}`
+        let apiUrl=`${baseUrl}${customisedPartUrl}part=${part}&q=${searchQuery}&key=${key}&maxResults=${maxResults}&type=${type}`
         let res = HTTP.call("get", apiUrl);
         return res;
     },

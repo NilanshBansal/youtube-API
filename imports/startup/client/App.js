@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import SearchBar from "../../ui/SearchBar";
+import AppMain from "./AppMain";
 
 export default App = (props)=>{
+   
     return (
-    <div>
-        <SearchBar />
-    </div>
-            
-        )
+  <AppMain />
+)
+
 }
 
 Meteor.startup(()=>{
